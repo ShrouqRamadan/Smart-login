@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <!-- my style -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="login-form w-50 mt-5 mx-auto  shadow-lg  text-center p-5">
+<h1>Smart Login System</h1>
+
+
+<input type="email" class="form-control my-3" placeholder="Enter Your email" id="userEmail">
+
+<input type="password" class="form-control mb-3" placeholder="Enter Your password" id="userPassword">
+
+<p class="text-danger fw-bolder d-none" id="incorrect">incorrect email or password</p>
+<p class="text-danger fw-bolder d-none" id="inputRequired">All inputs is required</p>
+
+<button type="button" class="btn btn-outline-info mt-4 w-100" onclick="login()" id="login">Login</button>
+<p class="text-white mt-3 fw-bold">You have an account? <a href="index.html" class="text-white" id="btnSign " >Signup</a></p>
+    </div>
+
+
+<!-- main js -->
+<script src="js/main.js"></script>
+</body>
+</html>
